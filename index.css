@@ -8,10 +8,9 @@
     --rock: url(./Componenets/rock.png);
     --paper: url(./Componenets/paper.png);
     --scissors: url(./Componenets/scissors.png);
-    --bgc: #8CC461;
-    --bx1: #FFA943;
-    --bx2: #BD00FF;
-    --bx3: #0074B6;
+    --rockcolor: #FFA943;
+    --scissorcolor: #BD00FF;
+    --papercolor: #0074B6;
 
 }
 
@@ -27,7 +26,7 @@ button:active {
 }
 
 body {
-    background-color: var(--bgc);
+    background-color: #8CC461;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -231,7 +230,7 @@ header {
     align-self: center;
     border-left: 160px solid rgba(0,0,0,.01);
     border-right: 160px solid rgba(0,0,0,.01);
-    border-top: 277.12px solid var(--bgc);
+    border-top: 277.12px solid #8CC461;
     position: absolute;
 }
 
@@ -250,7 +249,7 @@ button.hand {
 
 .rock {
     background: var(--rock) no-repeat center;
-    border: 18px solid var(--bx1);
+    border: 18px solid var(--rockcolor);
     bottom: -30px;
     left: 30%;
 }
@@ -258,7 +257,7 @@ button.hand {
 .paper {
     background: var(--paper) no-repeat center;
     align-self: flex-end;
-    border: 18px solid var(--bx3);
+    border: 18px solid var(--papercolor);
     top: -50px;
     left: -30px;
 }
@@ -267,7 +266,7 @@ button.hand {
     background: var(--scissors) no-repeat center;
     background-size: 50px;
     align-self: flex-end;
-    border: 18px solid var(--bx2);
+    border: 18px solid var(--scissorcolor);
     top: -50px;
     right: -30px;
 }

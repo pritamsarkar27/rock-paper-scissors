@@ -21,7 +21,7 @@ users.textContent = savedUsersScore !== null ? savedUsersScore : 0;
 
 const gameSet = document.querySelector(".gameSet");
 const hideaddbox = document.querySelector(".addBox");
-const statusbar = document.getElementById("status");
+const declrresult = document.getElementById("status");
 const hidemainresbox = document.querySelector(".mainresbox");
 
 addBoxButton.addEventListener("click", () => {
@@ -57,19 +57,19 @@ function playGame(event) {
   const partTwo = document.querySelector(".parttwo");
   const partOne = document.querySelector(".partone");
 
-  statusbar.textContent = `${winner} `;
+  declrresult.textContent = `${winner} `;
 
   const mainTwoElement = document.querySelector(".main.two");
 
   if (computerChoice === "rock") {
     mainTwoElement.style.backgroundImage = "var(--rock)";
-    mainTwoElement.style.borderColor = "var(--bx1)";
+    mainTwoElement.style.borderColor = "var(--rockcolor)";
   } else if (computerChoice === "paper") {
     mainTwoElement.style.backgroundImage = "var(--paper)";
-    mainTwoElement.style.borderColor = "var(--bx3)";
+    mainTwoElement.style.borderColor = "var(--papercolor)";
   } else if (computerChoice === "scissors") {
     mainTwoElement.style.backgroundImage = "var(--scissors)";
-    mainTwoElement.style.borderColor = "var(--bx2)";
+    mainTwoElement.style.borderColor = "var(--scissorcolor)";
   }
 
   addBoxButton1.addEventListener("click", () => {
