@@ -132,16 +132,4 @@ const getWinner = (player, computer) => {
   }
 };
 
-// //Animation for circle
-// document.addEventListener("DOMContentLoaded", function () {
-//      const secondPulse = document.querySelector(".twopulse");
 
-//      // Function to toggle animation class
-//      function toggleAnimation() {
-//         console.log("toggled");
-//          secondPulse.classList.toggle("animate");
-//      }
-
-//      // Toggle animation on click
-//      secondPulse.addEventListener("click", toggleAnimation);
-//  });
